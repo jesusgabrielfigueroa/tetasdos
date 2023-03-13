@@ -6,7 +6,7 @@
 
 body{
     font-family: sans-serif;
-    background-color: rgb(199, 87, 43);
+    background-color: rgb(236, 123, 78);
 }
 
 a{
@@ -19,10 +19,23 @@ li{
 }
 
 nav{
-    background-color: rgb(43, 25, 10);
+    /*background-color: rgb(43, 25, 10);*/
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 20px 0;
+    gap: 10px;
+}
+
+.logo{
+    color: #fff;
+    background-color: rgb(43, 25, 10);
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 3px;
+    border-radius: 9px;
 }
 
 nav ul{
@@ -30,7 +43,7 @@ nav ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 li a{
@@ -43,6 +56,10 @@ section{
     align-items: center;
     flex-direction: column;
     margin-top: 3em;
+}
+
+section img{
+    filter: drop-shadow(25px 10px 10px rgba(0, 0, 0, 0.5));
 }
 
 .tex{
@@ -93,6 +110,16 @@ footer{
 
 
 @media screen and (orientation: landscape) {
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+
+    nav ul{
+        flex-direction: row;
+    }
+
     section{
         flex-direction: row;
         gap: 7em;
@@ -101,4 +128,12 @@ footer{
     section img{
         width: 180px;
     }
+
+    footer{
+        flex-direction: row;
+        justify-content: end;
+        padding: 0 40px;
+        background-color: transparent;
+    }
 }
+
