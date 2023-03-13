@@ -90,3 +90,11 @@ footer{
     color: #fff;
     padding: 10px 0;
 }
+
+
+@media screen and (orientation: landscape) {
+    section{
+        flex-direction: row;
+        gap: 10em;
+    }
+}
