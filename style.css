@@ -95,6 +95,10 @@ footer{
 @media screen and (orientation: landscape) {
     section{
         flex-direction: row;
-        gap: 10em;
+        gap: 7em;
+    }
+
+    section img{
+        width: 180px;
     }
 }
